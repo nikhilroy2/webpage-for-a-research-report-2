@@ -535,17 +535,6 @@ Highcharts.chart('liquid_assets_chart', {
 
 
 
-let onshore_bond_tab_wrapper = document.querySelector('#onshore_bond_tab_wrapper');
-onshore_bond_tab_wrapper.querySelectorAll('[data-mdb-tab-init]').forEach(value => {
-    value.onclick = function () {
-        onshore_bond_tab_wrapper.querySelectorAll('[data-mdb-tab-init]').forEach(all => {
-            all.classList.remove('btn-primary');
-            all.classList.add('btn-outline-primary');
-        })
-        this.classList.add('btn-primary');
-        this.classList.remove('btn-outline-primary');
-    }
-})
 
 
 let segment_info_tab_wrapper = document.querySelector('#segment_info_tab_wrapper');
@@ -564,6 +553,18 @@ let loan_book_tab_wrapper = document.querySelector('#loan_book_tab_wrapper');
 loan_book_tab_wrapper.querySelectorAll('[data-mdb-tab-init]').forEach(value => {
     value.onclick = function () {
         loan_book_tab_wrapper.querySelectorAll('[data-mdb-tab-init]').forEach(all => {
+            all.classList.remove('btn-primary');
+            all.classList.add('btn-outline-primary');
+        })
+        this.classList.add('btn-primary');
+        this.classList.remove('btn-outline-primary');
+    }
+})
+
+let liquidity_profile_tab_wrapper = document.querySelector('#liquidity_profile_tab_wrapper');
+liquidity_profile_tab_wrapper.querySelectorAll('[data-mdb-tab-init]').forEach(value => {
+    value.onclick = function () {
+        liquidity_profile_tab_wrapper.querySelectorAll('[data-mdb-tab-init]').forEach(all => {
             all.classList.remove('btn-primary');
             all.classList.add('btn-outline-primary');
         })
