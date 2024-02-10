@@ -623,8 +623,9 @@
                                                                 </div>
                                                                 <div class="col-sm-6">
                                                                     <!-- chart -->
-                                                                    <figure class="highcharts-figure px-sm-5 mt-sm-n5" >
-                                                                        <div id="profit_by_seg_chart" style="height: 260px"></div>
+                                                                    <figure class="highcharts-figure px-sm-5 mt-sm-n5">
+                                                                        <div id="profit_by_seg_chart"
+                                                                            style="height: 260px"></div>
                                                                     </figure>
                                                                 </div>
                                                             </div>
@@ -636,15 +637,218 @@
                                             </div>
 
                                             <div class="col-lg-6 h-auto">
-                                                <div class="p-4 bg-white rounded shadow-2 w-100 h-100">
+                                                <div class="p-4 bg-white rounded shadow-2 w-100 h-100"
+                                                    id="loan_book_tab_wrapper">
+                                                    <h4 class="mb-3 text-black">Loan book Composition</h4>
+                                                    <div class="row g-2 nav nav-tabs mb-3" role="tablist">
+                                                        <div class="col-auto">
+                                                            <button data-mdb-tab-init=""
+                                                                data-mdb-target="#by_industry_tab"
+                                                                class="btn btn-primary shadow-0 btn-sm text-capitalize active"
+                                                                data-mdb-tab-initialized="true">
+                                                                By Industry
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <button data-mdb-tab-init=""
+                                                                data-mdb-target="#by_geography_tab"
+                                                                class="btn btn-outline-primary shadow-0 btn-sm text-capitalize">
+                                                                By Geography
+                                                            </button>
+                                                        </div>
+                                                    </div>
 
-                                                    <!--  -->
-                                                    <figure class="highcharts-figure">
-                                                        <div id="debt_summary_bar_chart"></div>
-                                                    </figure>
+
+                                                    <!-- Tabs content -->
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane fade show active" id="by_industry_tab"
+                                                            role="tabpanel">
+                                                            <h5>By Industry</h5>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="table-responsive w-100">
+                                                                        <table
+                                                                            class="table table-hover table-bordered w-100 table-sm">
+
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+                                                                                        Government and Government
+                                                                                        Institutions
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+                                                                                        36%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">309739897
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+                                                                                        Industry
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+                                                                                        5%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">38,651,847
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+                                                                                        Commercial
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+                                                                                        15%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">131,546,926
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+                                                                                        Services
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+                                                                                        27%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">228,765,183
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="text-nowrap fw-bold">
+                                                                                        Contractors
+                                                                                    </td>
+                                                                                    <td class="text-nowrap fw-bold">
+                                                                                        1%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">7,522,404
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Real Estate</td>
+                                                                                    <td>7%</td>
+                                                                                    <td>62,108,775</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Consumption</td>
+                                                                                    <td>9%</td>
+                                                                                    <td>74,375,596</td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>Other</td>
+                                                                                    <td>0%</td>
+                                                                                    <td>276,622</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td>852987250</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <!-- chart -->
+                                                                    <figure class="highcharts-figure px-sm-5 mt-sm-n5">
+                                                                        <div id="by_industry_chart"></div>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="by_geography_tab"
+                                                            role="tabpanel">
+                                                            <h5>By Geography</h5>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="table-responsive w-100">
+                                                                        <table
+                                                                            class="table table-hover table-bordered w-100 table-sm">
+
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+                                                                                        Qatar
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+                                                                                        79%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">677,209,164
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+                                                                                        Other GCC countries
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+                                                                                        2%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">14,815,079
+                                                                                    </td>
+
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+                                                                                        Europe
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+                                                                                        12%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">100,004,623
+                                                                                    </td>
+
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+                                                                                        North America
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+                                                                                        1%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">8,061,909
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+                                                                                        Others
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+                                                                                        6%
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">52,896,475
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="text-nowrap">
+
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">
+
+                                                                                    </td>
+                                                                                    <td class="text-nowrap">852,987,250
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <!-- chart -->
+                                                                    <figure class="highcharts-figure px-sm-5 mt-sm-n5">
+                                                                        <div id="by_geography_chart"></div>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
                                                 </div>
                                             </div>
-
 
                                         </div>
                                     </div>
@@ -655,159 +859,204 @@
 
                                         <div class="">
                                             <div class="row g-3 g-md-4">
-                                                <div class="col-lg-5">
+                                                <div class="col-lg-6">
                                                     <div class="p-4 bg-white rounded shadow-2 w-100 h-100">
-                                                        <h4 class="mb-3 text-black">10 major cities in Anhui Province by
-                                                            GDP and per capita GDP
-                                                            in
-                                                            2022 </h4>
+                                                        <h4 class="mb-3 text-black">Funding Profile </h4>
 
-                                                        <div class="table-responsive">
-                                                            <table
-                                                                class="table table-hover table-bordered w-100 table-sm">
-                                                                <thead>
-                                                                    <th class="text-primary fw-bold">
-                                                                        Cities
-                                                                    </th>
-                                                                    <th class="text-primary fw-bold">
-                                                                        Nominal GDP (RMB billion)
-                                                                    </th>
-                                                                    <th class="text-primary fw-bold">
-                                                                        Contribution to Anhul's GDP
-                                                                    </th>
-                                                                    <th class="text-primary fw-bold">
-                                                                        Per capita GDP (RMB)
-                                                                    </th>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Hefei city</td>
-                                                                        <td>1201.3</td>
-                                                                        <td>27%</td>
-                                                                        <td>125,798</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Wuhu city</td>
-                                                                        <td>450.2</td>
-                                                                        <td>10%</td>
-                                                                        <td>121,630</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Chuzhou city</td>
-                                                                        <td>361.0</td>
-                                                                        <td>8%</td>
-                                                                        <td>89,800</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Fuyang city</td>
-                                                                        <td>323.3</td>
-                                                                        <td>7%</td>
-                                                                        <td>39,643</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Anging city</td>
-                                                                        <td>276.7</td>
-                                                                        <td>6%</td>
-                                                                        <td>66,470</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ma'anshan city</td>
-                                                                        <td>252.1</td>
-                                                                        <td>6%</td>
-                                                                        <td>116,100</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Suzhou city</td>
-                                                                        <td>222.5</td>
-                                                                        <td>5%</td>
-                                                                        <td>41,876</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Bozhou city</td>
-                                                                        <td>210.2</td>
-                                                                        <td>5%</td>
-                                                                        <td>442,258</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Bengbu city</td>
-                                                                        <td>201.2</td>
-                                                                        <td>4%</td>
-                                                                        <td>60,739</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Lu'an city</td>
-                                                                        <td>200.5</td>
-                                                                        <td>4%</td>
-                                                                        <td>45,643</td>
-                                                                    </tr>
-
-                                                                </tbody>
-                                                            </table>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="table-responsive w-100">
+                                                                    <table
+                                                                        class="table table-hover table-bordered w-100 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="text-nowrap"></td>
+                                                                                <td class="text-nowrap">2021</td>
+                                                                                <td class="text-nowrap">2022</td>
+                                                                                <td class="text-nowrap">2023</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-nowrap">Due to banks
+                                                                                </td>
+                                                                                <td class="text-nowrap">111.4</td>
+                                                                                <td class="text-nowrap">142.8</td>
+                                                                                <td class="text-nowrap">157.0</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-nowrap">Customer
+                                                                                    deposits</td>
+                                                                                <td class="text-nowrap">785.5</td>
+                                                                                <td class="text-nowrap">842.3</td>
+                                                                                <td class="text-nowrap">857.1</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-nowrap">Debt securities
+                                                                                </td>
+                                                                                <td class="text-nowrap">40.1</td>
+                                                                                <td class="text-nowrap">35.2</td>
+                                                                                <td class="text-nowrap">36.3</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-nowrap">Other borrowings
+                                                                                </td>
+                                                                                <td class="text-nowrap">26.1</td>
+                                                                                <td class="text-nowrap">25.6</td>
+                                                                                <td class="text-nowrap">29.4</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-nowrap">Other
+                                                                                    liabilities</td>
+                                                                                <td class="text-nowrap">29.8</td>
+                                                                                <td class="text-nowrap">37.3</td>
+                                                                                <td class="text-nowrap">41.0</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <!-- chart -->
+                                                                <figure class="highcharts-figure px-sm-5 mt-sm-n5">
+                                                                    <div id="funding_profile_chart"></div>
+                                                                </figure>
+                                                            </div>
                                                         </div>
+
+
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-7">
-                                                    <div class="p-4 bg-white rounded shadow-2 w-100 h-100">
-                                                        <h4 class="mb-3 text-black">Onshore bond issuance </h4>
-                                                        <div id="onshore_bond_tab_wrapper">
-                                                            <div class="row g-2 nav nav-tabs mb-3" role="tablist">
-                                                                <div class="col-auto">
-                                                                    <button data-mdb-tab-init=""
-                                                                        data-mdb-target="#by_tenor_tab"
-                                                                        class="btn btn-primary shadow-0 btn-sm text-capitalize active"
-                                                                        data-mdb-tab-initialized="true">
-                                                                        by tenor
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <button data-mdb-tab-init=""
-                                                                        data-mdb-target="#by_category_tab"
-                                                                        class="btn btn-outline-primary shadow-0 btn-sm text-capitalize">
-                                                                        by category
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <button data-mdb-tab-init=""
-                                                                        data-mdb-target="#by_coupon_tab"
-                                                                        class="btn btn-outline-primary shadow-0 btn-sm text-capitalize">
-                                                                        by coupon rate
-                                                                    </button>
-                                                                </div>
+                                                <div class="col-lg-6 h-auto">
+                                                    <div class="p-4 bg-white rounded shadow-2 w-100 h-100"
+                                                        id="liquidity_profile_tab_wrapper">
+                                                        <h4 class="mb-3 text-black">Liquidity Profile</h4>
+                                                        <div class="row g-2 nav nav-tabs mb-3" role="tablist">
+                                                            <div class="col-auto">
+                                                                <button data-mdb-tab-init=""
+                                                                    data-mdb-target="#regulatory_ratios_tab"
+                                                                    class="btn btn-primary shadow-0 btn-sm text-capitalize active"
+                                                                    data-mdb-tab-initialized="true">
+                                                                    Regulatory Ratios
+                                                                </button>
                                                             </div>
-
-
-                                                            <!-- Tabs content -->
-                                                            <div class="tab-content">
-                                                                <div class="tab-pane fade show active" id="by_tenor_tab"
-                                                                    role="tabpanel">
-                                                                    <!--  -->
-                                                                    <figure class="highcharts-figure">
-                                                                        <div id="bond_by_tenor_chart"></div>
-                                                                    </figure>
-                                                                </div>
-                                                                <div class="tab-pane fade" id="by_category_tab"
-                                                                    role="tabpanel">
-                                                                    <!--  -->
-                                                                    <figure class="highcharts-figure">
-                                                                        <div id="bond_by_category_chart"></div>
-                                                                    </figure>
-                                                                </div>
-                                                                <div class="tab-pane fade" id="by_coupon_tab"
-                                                                    role="tabpanel">
-                                                                    <!--  -->
-                                                                    <figure class="highcharts-figure">
-                                                                        <div id="bond_by_coupon_chart"></div>
-                                                                    </figure>
-                                                                </div>
+                                                            <div class="col-auto">
+                                                                <button data-mdb-tab-init=""
+                                                                    data-mdb-target="#liquid_assets_tab"
+                                                                    class="btn btn-outline-primary shadow-0 btn-sm text-capitalize">
+                                                                    Liquid Assets / Total Assets
+                                                                </button>
                                                             </div>
-                                                            <!-- Tabs content -->
-
                                                         </div>
+
+
+                                                        <!-- Tabs content -->
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane fade show active"
+                                                                id="regulatory_ratios_tab" role="tabpanel">
+                                                                <h5>Regulatory Ratios</h5>
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <div class="table-responsive w-100">
+                                                                            <table
+                                                                                class="table table-hover table-bordered w-100 table-sm">
+
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="text-nowrap"></td>
+                                                                                        <td class="text-nowrap">2021
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">2022
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">2023
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="text-nowrap">LCR</td>
+                                                                                        <td class="text-nowrap">147</td>
+                                                                                        <td class="text-nowrap">104.0
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">206</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="text-nowrap">NSFR
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">95.9
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">105.7
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">105.4
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <!-- chart -->
+                                                                        <figure
+                                                                            class="highcharts-figure px-sm-5 mt-sm-n5">
+                                                                            <div id="regulatory_ratios_chart"
+                                                                                style="height: 350px"></div>
+                                                                        </figure>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="liquid_assets_tab"
+                                                                role="tabpanel">
+                                                                <h5>Liquid Assets / Total Assets</h5>
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <div class="table-responsive w-100">
+                                                                            <table
+                                                                                class="table table-hover table-bordered w-100 table-sm">
+
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="text-nowrap"></td>
+                                                                                        <td class="text-nowrap">2021
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">2022
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">2023
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="text-nowrap">Liquid
+                                                                                            Assets / Total Assets</td>
+                                                                                        <td class="text-nowrap">19.06
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">21.15
+                                                                                        </td>
+                                                                                        <td class="text-nowrap">20.71
+                                                                                        </td>
+                                                                                    </tr>
+
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <!-- chart -->
+                                                                        <figure
+                                                                            class="highcharts-figure px-sm-5 mt-sm-n5">
+                                                                            <div id="liquid_assets_chart"
+                                                                                style="height: 250px"></div>
+                                                                        </figure>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                 </section>
+
+
+
 
 
                             </div>
@@ -832,8 +1081,147 @@
                                         <div class="row g-3 g-md-4">
                                             <div class="col-12">
                                                 <div class="p-4 bg-white rounded shadow-2 w-100 h-100">
-                                                    <!-- <h4 class="mb-3 text-black">Overview on Province of Anhui (China)</h4> -->
+                                                    <h4 class="mb-3 text-black">Recent Developmentsy</h4>
 
+                                                    <div class="table-responsive w-100">
+                                                        <table class="table table-hover table-bordered w-100 table-sm">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-nowrap text-primary fw-bold">
+                                                                        Chronology</th>
+                                                                    <th class="text-nowrap text-primary fw-bold">Event
+                                                                        type</th>
+                                                                    <th class="text-nowrap text-primary fw-bold">Event
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1964</td>
+                                                                    <td>Incorporation</td>
+                                                                    <td>Established in 1964 as the first Qatari-owned
+                                                                        commercial bank. </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2004-2007</td>
+                                                                    <td>Acquisition</td>
+                                                                    <td>In 2004, it acquired Ansbacher Holdings, a
+                                                                        London-based wealth management financial
+                                                                        institution, from FirstRand bank of South
+                                                                        Africa.
+                                                                        In 2005, QNB purchased a 25% stake in Al-Mansour
+                                                                        Investment Bank, an Iraq-based bank, and
+                                                                        increased its shareholding to 51% in 2012.
+                                                                        In 2007, QNB acquired a 20.6% stake in Housing
+                                                                        Bank for Trade and Finance (HBTF), the largest
+                                                                        bank in Jordan at that time, for around $442
+                                                                        million.
+
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>2008</td>
+                                                                    <td>Acquisition/
+                                                                        Establishment
+
+                                                                    </td>
+                                                                    <td>The bank acquired a 50% interest in Tunisian
+                                                                        Qatari Bank, a commercial bank in Tunisia. In
+                                                                        2013, QNB increased its shareholding in Tunisian
+                                                                        Qatari Bank to 99.99% from 50% and rebranded it
+                                                                        as QNB Tunisia.
+                                                                        QNB acquired a 23.8% stake in UAE-based
+                                                                        Commercial Bank International and further
+                                                                        increased its shareholding to 40% in August
+                                                                        2012.
+                                                                        QNB also established a wholly owned subsidiary,
+                                                                        QNB Capital, for providing a investment banking
+                                                                        services to corporate, government and
+                                                                        institutional clients.
+
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>2009</td>
+                                                                    <td>Establishment
+
+                                                                    </td>
+                                                                    <td>QNB launched operations in Syria with the
+                                                                        establishment of QNB Syria
+                                                                        The bank opened another wholly owned subsidiary,
+                                                                        QNB Banque Privée SA, in Switzerland and later
+                                                                        renamed it QNB Suisse S.A.
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>2011</td>
+                                                                    <td>Acquisition/
+                                                                        Establishment
+
+                                                                    </td>
+                                                                    <td>QNB bought a majority stake in Indonesia-based
+                                                                        Bank Kesawan (later renamed PT Bank QNB
+                                                                        Indonesia Tbk (QNB Indonesia).
+                                                                        QNB established a wholly owned brokerage
+                                                                        subsidiary, QNB Financial Services (QNBFS).
+
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>2013</td>
+                                                                    <td>Acquisition/
+                                                                        Establishment
+
+                                                                    </td>
+                                                                    <td>QNB entered the Indian market with the
+                                                                        establishment of a fully owned subsidiary, QNB
+                                                                        India Private Limited.
+                                                                        QNB acquired a 97.1% interest in Egypt's
+                                                                        National Société Générale Bank, which was later
+                                                                        renamed QNB ALAHLI.
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>2014</td>
+                                                                    <td>Acquisition
+
+                                                                    </td>
+                                                                    <td>QNB acquired a 19.4% stake in Ecobank
+                                                                        Transnational Incorporated (Ecobank), a bank
+                                                                        with extensive operations in Togo, Africa
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>2021</td>
+                                                                    <td>Acquisition
+
+                                                                    </td>
+                                                                    <td>QNB announced the acquisition of an additional
+                                                                        stake of 12,883,373 ordinary shares in the
+                                                                        Housing Bank for Trade and Finance in Jordan
+                                                                        raising QNB's share in the capital of this bank
+                                                                        from 34.48% to 38.57%.
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>2022</td>
+                                                                    <td>Acquisition
+
+                                                                    </td>
+                                                                    <td>QNB established Digital-Q-FS Limited, a wholly
+                                                                        owned subsidiary in the UK.
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
