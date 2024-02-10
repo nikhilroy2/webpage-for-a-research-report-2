@@ -15,7 +15,7 @@ Highcharts.chart('peer_comparison_chart', {
         align: 'left'
     },
     xAxis: {
-        categories: ['', '', '', ''],
+        categories: ['Cost / Income Ratio', 'Net Income / Tangible Assets', 'Net Interest Margin', 'Problem Loans / Gross Loans'],
         title: {
             text: ''
         },
@@ -48,7 +48,7 @@ Highcharts.chart('peer_comparison_chart', {
     legend: {
         layout: 'horizontal',
         align: 'center',
-        verticalAlign: 'top',
+        verticalAlign: 'bottom',
         y: 20,
         floating: false,
         shadow: true
